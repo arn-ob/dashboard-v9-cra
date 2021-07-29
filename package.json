@@ -16,7 +16,8 @@
     "dashboard",
     "admin",
     "tailwindcss",
-    "layout"
+    "layout",
+    "admin dashboard"
   ],
   "dependencies": {
     "@craco/craco": "^6.1.2",
