@@ -34,6 +34,7 @@ export default function Taskbar() {
                 <ModalHeader>
                   {section.icon} <span className="pl-2">{section.section}</span>
                   <button
+                    aria-label="Close"
                     className="ml-auto focus:outline-none"
                     onClick={isSelectedItem(section.section)}
                   >

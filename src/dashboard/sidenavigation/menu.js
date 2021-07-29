@@ -16,7 +16,11 @@ export default function Menu() {
       </div>
       <Modal toggle="windows" size="large">
         <div className="pt-4 -mb-3 flex justify-end">
-          <button className="text-lg pr-3" onClick={isSelectedItem('windows')}>
+          <button
+            aria-label="Close"
+            className="text-lg px-3 py-0.5 focus:outline-none"
+            onClick={isSelectedItem('windows')}
+          >
             <CloseIcon />
           </button>
         </div>
