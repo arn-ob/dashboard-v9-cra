@@ -32,8 +32,12 @@ export default function DashboardProvider({ children }) {
   // close Taskbar modal when routes changes
   React.useEffect(() => {
     document.documentElement.style.overflow = 'hidden';
-    return history.listen(() => setSelected(''));
-  }, [history]);
+    return history.listen(() => {
+      if (selected) {
+        setSelected('');
+      }
+    });
+  }, [history, selected]);
 
   return (
     <Context.Provider value={{ isSelectedItem, ref, selected }}>
