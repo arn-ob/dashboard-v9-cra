@@ -20,7 +20,7 @@ export default function Taskbar() {
   return (
     <div className={style.taskbar}>
       <div className={style.container}>
-        <div className="flex mx-auto space-x-4">
+        <div className="flex mx-auto space-x-6">
           <Menu />
           {data.map((section) => (
             <div key={section.section} className="overflow-hidden">
