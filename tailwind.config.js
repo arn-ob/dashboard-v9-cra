@@ -13,10 +13,11 @@ module.exports = {
         },
       },
       backgroundImage: (theme) => ({
-        window: "url('../src/windows11st.jpg')",
+        'window-image': "url('../src/assets/windows11.jpg')",
       }),
       backgroundColor: {
-        'blue-gray': '#eceff1',
+        'blue-gray': '#cfd8dc',
+        'blue-gray-light': '#eceff1',
       },
     },
   },

@@ -1,4 +1,4 @@
-export default function LinkIcon({ className }) {
+const LinkIcon = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,6 @@ export default function LinkIcon({ className }) {
       />
     </svg>
   );
-}
+};
+
+export default LinkIcon;

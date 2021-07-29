@@ -1,4 +1,4 @@
-const DocumentsIcon = ({ className }) => (
+const WindowsFolderIcon = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
@@ -102,4 +102,4 @@ const DocumentsIcon = ({ className }) => (
   </svg>
 );
 
-export default DocumentsIcon;
+export default WindowsFolderIcon;

@@ -28,6 +28,7 @@ export default function DashboardProvider({ children }) {
     return () => document.removeEventListener('keyup', handleEscape);
   }, [selected]);
 
+  // Set html tag style overflow to hidden
   // close Taskbar modal when routes changes
   React.useEffect(() => {
     document.documentElement.style.overflow = 'hidden';

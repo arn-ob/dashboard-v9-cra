@@ -1,6 +1,6 @@
 # Salvia-kit Dashboard v9 create-react-app
 
-![Salvia-kit Dashboard v9](https://res.cloudinary.com/beloved/image/upload/v1627525331/dashboards/dashv9_wfn9kc.png)
+![Salvia-kit Dashboard v9](https://www.salvia-kit.com/images/dashboards/dashv9.png)
 
 ## 📋 Documentation
 You can see the documentation on [http://localhost:3000/guides/documentation](http://localhost:3000/guides/documentation)

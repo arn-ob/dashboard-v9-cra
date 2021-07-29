@@ -1,16 +1,17 @@
 import { useHistory, useLocation } from 'react-router-dom';
-import data from '../sidenavigation/data';
-import OFFICE from '../sidenavigation/office';
-import CloseIcon from '../sidenavigation/icons/system/close';
-import DocumentsIcon from '../sidenavigation/icons/system/documents';
+
+import data from './data';
+import OFFICE from './office';
+import CloseIcon from './icons/system/close';
+import WindowsFolderIcon from './icons/system/folder';
 
 const style = {
   container: 'mr-auto text-xs',
-  header: 'flex bg-blue-gray py-1 z-40 w-full',
-  btn: `ml-auto px-2 text-lg font-light hover:bg-gray-300 focus:outline-none`,
+  header: 'flex bg-blue-gray py-1.5 z-40 w-full',
+  btn: `ml-auto px-2 text-lg font-light hover:bg-blue-gray-light focus:outline-none`,
 };
 
-export default function TopNavigation() {
+export default function Topbar() {
   const history = useHistory();
   const { pathname } = useLocation();
   return (
@@ -19,11 +20,11 @@ export default function TopNavigation() {
         {data.map((section) => (
           <div key={section.section}>
             {section.content.map((item) => (
-              <div className="mt-1.5" key={item.title}>
+              <div key={item.title}>
                 {pathname === item.link && (
                   <div className="flex pl-3">
-                    <DocumentsIcon className="h-4 w-4" />
-                    <span className="pl-2">
+                    <WindowsFolderIcon className="h-4 w-4 mt-0.5" />
+                    <span className="pl-2 pt-0.5">
                       {section.section} -> {item.title}
                     </span>
                   </div>

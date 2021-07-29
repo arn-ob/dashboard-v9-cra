@@ -2,25 +2,25 @@ import EventsIcon from './icons/events';
 import GuidesIcon from './icons/guides';
 import MessagesIcon from './icons/messages';
 import PicturesIcon from './icons/pictures';
-import DocumentsIcon from './icons/system/documents';
 import StatisticsIcon from './icons/statistics';
+import AdministrationIcon from './icons/administration';
 
 const data = [
   {
-    section: 'Documents',
-    icon: <DocumentsIcon />,
+    section: 'Administration',
+    icon: <AdministrationIcon />,
     content: [
       {
         title: 'Taxes',
-        link: '/documents/taxes',
+        link: '/administration/taxes',
       },
       {
         title: 'Travel',
-        link: '/documents/travel',
+        link: '/administration/travel',
       },
       {
         title: 'Insurance',
-        link: '/documents/insurance',
+        link: '/administration/insurance',
       },
     ],
   },

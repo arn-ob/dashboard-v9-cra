@@ -2,20 +2,19 @@ const Snippet = () => (
   <pre className="font-mono text-sm px-4 py-1 rounded overflow-x-auto max-w-full bg-gray-100 text-black border">
     {`[ 
   {
-    section : 'Apps',
+    section: 'Administration',
+    icon: <DocumentsIcon />,
     content: [
-      {
-        title: 'All Apps',
-        icon: <AllAppsIcon />,
-        link: '/admin/all-apps'
-      },
-      {
-        title: 'Updates',
-        icon: <UpdatesIcon/>,
-        link: '/admin/updates'
-      },
+       {
+         title: 'Taxes',
+         link: '/administration/taxes',
+       },
+       {
+         title: 'Travel',
+         link: '/administration/travel',
+       },
     ]
-  },
+  }
 ]
 `}
   </pre>
