@@ -15,6 +15,11 @@ export default function DashboardProvider({ children }) {
     [],
   );
 
+  // Set html tag style overflow to hidden
+  React.useEffect(() => {
+    document.documentElement.style.overflow = 'hidden';
+  }, []);
+
   // close Taskbar modal when you click on "ESC" key
   React.useEffect(() => {
     const handleEscape = (event) => {
@@ -28,10 +33,8 @@ export default function DashboardProvider({ children }) {
     return () => document.removeEventListener('keyup', handleEscape);
   }, [selected]);
 
-  // Set html tag style overflow to hidden
   // close Taskbar modal when routes changes
   React.useEffect(() => {
-    document.documentElement.style.overflow = 'hidden';
     return history.listen(() => {
       if (selected) {
         setSelected('');
